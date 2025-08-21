@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visit Taniti – Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header role="banner">
+  <div class="container topbar">
+    <div class="logo"><div class="badge" aria-hidden="true"></div> Visit Taniti</div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">You are here: <a href="index.html">Home</a> › <span>Booking</span></nav>
+  <h1>Book your experience</h1>
+
+  <form onsubmit="return fakeSubmit('Thanks! This is a prototype. Your spot is pending.');" aria-describedby="disclaimer">
+    <label for="tour">Tour</label>
+    <select id="tour" name="tour">
+      <option value="City Market Walk">City Market Walk</option>
+      <option value="Museum of Taniti">Museum of Taniti</option>
+      <option value="Rainforest Hike">Rainforest Hike</option>
+      <option value="Snorkeling Reef Garden">Snorkeling Reef Garden</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input id="date" type="date" required>
+
+    <label for="name">Full Name</label>
+    <input id="name" type="text" required>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" required>
+
+    <button class="btn" type="submit">Reserve Spot</button>
+    <p id="disclaimer" class="notice">Prototype only. No data is submitted.</p>
+  </form>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="grid">
+      <p class="small">© Taniti Tourism Board • Prototype for coursework • No data stored</p>
+      <p class="small" style="text-align:right">Made for usability testing • Mobile friendly</p>
+    </div>
+  </div>
+</footer>
+<button class="book-now" onclick="location.href='booking.html'">Book Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>

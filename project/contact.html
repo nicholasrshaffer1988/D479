@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visit Taniti – Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header role="banner">
+  <div class="container topbar">
+    <div class="logo"><div class="badge" aria-hidden="true"></div> Visit Taniti</div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">You are here: <a href="index.html">Home</a> › <span>Contact</span></nav>
+  <h1>Contact the Taniti Tourism Board</h1>
+
+  <form onsubmit="return fakeSubmit('Message sent (demo).');">
+    <label for="cname">Name</label>
+    <input id="cname" type="text" required>
+
+    <label for="cemail">Email</label>
+    <input id="cemail" type="email" required>
+
+    <label for="msg">Message</label>
+    <textarea id="msg" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <p class="notice">We typically respond within 48 hours.</p>
+  </form>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="grid">
+      <p class="small">© Taniti Tourism Board • Prototype for coursework • No data stored</p>
+      <p class="small" style="text-align:right">Made for usability testing • Mobile friendly</p>
+    </div>
+  </div>
+</footer>
+<button class="book-now" onclick="location.href='booking.html'">Book Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>

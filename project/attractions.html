@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visit Taniti – Attractions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header role="banner">
+  <div class="container topbar">
+    <div class="logo"><div class="badge" aria-hidden="true"></div> Visit Taniti</div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">You are here: <a href="index.html">Home</a> › <span>Attractions</span></nav>
+  <h1>Attractions</h1>
+  <p class="lead">Choose a category to explore Taniti.</p>
+
+  <div class="cards">
+    <article class="card" id="cultural">
+      <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+      <h3>Cultural</h3>
+      <ul>
+        <li>City Market Walk</li>
+        <li>Museum of Taniti</li>
+        <li>Old Town Tour</li>
+      </ul>
+      <a class="btn" href="booking.html?tour=cultural">Book Cultural Tour</a>
+    </article>
+
+    <article class="card" id="outdoor">
+      <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+      <h3>Outdoor</h3>
+      <ul>
+        <li>Rainforest Hike</li>
+        <li>Volcano Vista</li>
+        <li>Cliff Lookout</li>
+      </ul>
+      <a class="btn" href="booking.html?tour=outdoor">Book Outdoor Tour</a>
+    </article>
+
+    <article class="card" id="snorkel">
+      <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+      <h3>Snorkeling</h3>
+      <ul>
+        <li>Reef Garden</li>
+        <li>Turtle Cove</li>
+      </ul>
+      <a class="btn" href="booking.html?tour=snorkel">Book Snorkeling</a>
+    </article>
+  </div>
+
+  <section id="dining" aria-labelledby="dining-title" style="margin-top:1rem">
+    <h2 id="dining-title">Dining</h2>
+    <p>From markets to seaside restaurants. Sample Pan-Asian cuisine and fresh seafood.</p>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="grid">
+      <p class="small">© Taniti Tourism Board • Prototype for coursework • No data stored</p>
+      <p class="small" style="text-align:right">Made for usability testing • Mobile friendly</p>
+    </div>
+  </div>
+</footer>
+<button class="book-now" onclick="location.href='booking.html'">Book Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>

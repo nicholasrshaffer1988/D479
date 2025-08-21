@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visit Taniti – Home</title>
+  <meta name="description" content="Prototype for the Taniti Tourism website.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header role="banner">
+  <div class="container topbar">
+    <div class="logo"><div class="badge" aria-hidden="true"></div> Visit Taniti</div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">You are here: <a href="index.html">Home</a></nav>
+  <section class="hero">
+    <div class="img" role="img" aria-label="Scenic Taniti beach">Taniti Beaches</div>
+    <div>
+      <h1>Plan your Taniti adventure</h1>
+      <p class="lead">Explore culture, cuisine, and coastline. Book tours and lodging with confidence.</p>
+      <a class="btn" href="booking.html">Plan Your Trip</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="explore">
+    <h2 id="explore">Explore</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+        <h3>Cultural Tours</h3>
+        <p>Museums, markets, and historic sites.</p>
+        <a class="btn" href="attractions.html?tour=cultural">Browse Attractions</a>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+        <h3>Outdoor & Snorkeling</h3>
+        <p>Trails, reefs, and guided excursions.</p>
+        <a class="btn" href="attractions.html?tour=snorkel#snorkel">Book Snorkeling</a>
+      </article>
+      <article class="card">
+        <div class="thumb"><img src="assets/placeholder.svg" alt=""></div>
+        <h3>Dining</h3>
+        <p>From street food to seaside fine dining.</p>
+        <a class="btn" href="attractions.html#dining">See Dining</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="grid">
+      <p class="small">© Taniti Tourism Board • Prototype for coursework • No data stored</p>
+      <p class="small" style="text-align:right">Made for usability testing • Mobile friendly</p>
+    </div>
+  </div>
+</footer>
+<button class="book-now" onclick="location.href='booking.html'">Book Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>
