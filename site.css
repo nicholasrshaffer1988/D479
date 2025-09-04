@@ -93,6 +93,7 @@ h3 { font-size:1.125rem }
   background:
     url("images/bg-island.jpg") center/cover no-repeat,
     linear-gradient(160deg,var(--accent),var(--accent-2));
+  background-size:cover;   /* ensure it fills */
 }
 @media (min-width:1024px) { .page-hero::before { background-attachment:fixed } }
 .page-hero::after {
@@ -119,13 +120,14 @@ h3 { font-size:1.125rem }
   box-shadow:var(--shadow-soft);
 }
 
-/* Image handling: prevent blurry scaling */
+/* Image handling: keep full width, sharpen if scaled */
 .media-3x2,
 .media-16x9 {
-  max-width:100%;     /* never upscale beyond container */
-  height:auto;        /* keep natural ratio */
+  width:100%;          /* fill card width */
+  height:auto;
   display:block;
   object-fit:cover;
+  aspect-ratio:auto;   /* respect natural ratio first */
   image-rendering:crisp-edges;             /* Firefox */
   image-rendering:-webkit-optimize-contrast; /* Chrome/Safari */
   -ms-interpolation-mode:nearest-neighbor; /* old IE */
