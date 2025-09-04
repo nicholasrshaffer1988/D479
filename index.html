@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Visit Taniti — Island travel without the chaos</title>
+  <meta name="description" content="Explore markets, museums, reefs, and rainforest on the island of Taniti. Plan the perfect unhurried trip."/>
+  <!-- fixed: favicon relative instead of /favicon.ico -->
+  <link rel="icon" href="favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="site.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <!-- fixed: root-relative to file-based links -->
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>Visit Taniti</span></a>
+      <ul class="navlinks">
+        <li><a data-nav href="index.html" class="navlink">Home</a></li>
+        <li><a data-nav href="attractions.html" class="navlink">Attractions</a></li>
+        <li><a data-nav href="booking.html" class="navlink">Booking</a></li>
+        <li><a data-nav href="contact.html" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="kicker">Island escape</span>
+      <h1 class="mt-2">Visit Taniti</h1>
+      <h2 class="text-white/90">Markets, museums, reefs, rainforest. One trip, zero rush.</h2>
+      <div class="hero-actions">
+        <a href="booking.html" class="btn">Plan your trip</a>
+        <a href="attractions.html" class="btn alt">Browse attractions</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container grid-3">
+      <article class="card reveal">
+        <!-- confirm file is lowercase market.jpg -->
+        <img class="media-3x2" src="images/market.jpg" alt="Vibrant market stalls with fruit and textiles">
+        <div class="card-body">
+          <h3>Culture</h3>
+          <p>City Market Walk, Museum of Taniti, and Old Town architecture with guided tours daily.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <!-- confirm file is lowercase reef.jpg -->
+        <img class="media-3x2" src="images/reef.jpg" alt="Shallow coral reef with tropical fish">
+        <div class="card-body">
+          <h3>Outdoors</h3>
+          <p>Rainforest hikes, volcano viewpoints, reef snorkeling, and coastal bike paths.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <!-- confirm file is lowercase dining.jpg -->
+        <img class="media-3x2" src="images/dining.jpg" alt="Seaside dining at sunset">
+        <div class="card-body">
+          <h3>Food & Nightlife</h3>
+          <p>Seafood stands, Pan-Asian cafes, family restaurants, plus a few harbor night spots.</p>
+        </div>
+      </article>
+    </div>
+
+    <section class="container section surface reveal" style="padding:1.5rem;">
+      <h2>Know before you go</h2>
+      <div class="grid-3" style="margin-top:1rem;">
+        <div><h3>Getting there</h3><p>Daily flights; ferry twice a week. Taxis and rental bikes on arrival.</p></div>
+        <div><h3>Lodging</h3><p>Harbor hotels, guesthouses, and eco-lodges. Book early in peak season.</p></div>
+        <div><h3>Accessibility</h3><p>Step-free access at major sites, marked curb cuts, priority bus seating.</p></div>
+        <div><h3>Food</h3><p>Seafood, rice dishes, tropical fruit. Common allergens labeled at most venues.</p></div>
+        <div><h3>Safety</h3><p>Low crime. Follow posted reef guidance; currents vary by cove.</p></div>
+        <div><h3>Best time</h3><p>Dry season for calm seas; shoulder months are cheaper and quieter.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Taniti Tourism Board • Prototype for coursework • No data stored</div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

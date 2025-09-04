@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Visit Taniti — Attractions</title>
+  <meta name="description" content="Cultural tours, outdoor adventures, snorkeling, and dining on Taniti."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- relative stylesheet path -->
+  <link rel="stylesheet" href="site.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>Visit Taniti</span></a>
+      <ul class="navlinks">
+        <li><a data-nav href="index.html" class="navlink">Home</a></li>
+        <li><a data-nav href="attractions.html" class="navlink">Attractions</a></li>
+        <li><a data-nav href="booking.html" class="navlink">Booking</a></li>
+        <li><a data-nav href="contact.html" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="kicker">What to do</span>
+      <h1 class="mt-2">Attractions</h1>
+      <h2 class="text-white/90">Culture, outdoors, and reef spots worth your sunscreen.</h2>
+    </div>
+  </section>
+
+  <main class="section container">
+    <div class="grid-3">
+      <section class="card reveal">
+        <!-- make sure the file really is museum.jpg -->
+        <img class="media-3x2" src="images/museum.jpg" alt="Museum of Taniti exterior">
+        <div class="card-body">
+          <h3>Cultural</h3>
+          <ul class="list-disc pl-5 text-slate-300">
+            <li>City Market Walk: morning stalls and crafts</li>
+            <li>Museum of Taniti: history and natural exhibits</li>
+            <li>Old Town Tour: architecture and lookout</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card reveal">
+        <!-- matches volcano.jpg -->
+        <img class="media-3x2" src="images/volcano.jpg" alt="Volcano vista with clouds">
+        <div class="card-body">
+          <h3>Outdoor</h3>
+          <ul class="list-disc pl-5 text-slate-300">
+            <li>Rainforest Hike: shaded loop, local flora</li>
+            <li>Volcano Vista: shuttle to scenic overlook</li>
+            <li>Cliff Lookout: sunset views, picnic area</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card reveal">
+        <!-- matches snorkel.jpg -->
+        <img class="media-3x2" src="images/snorkel.jpg" alt="Snorkeler above bright coral">
+        <div class="card-body">
+          <h3>Snorkeling</h3>
+          <ul class="list-disc pl-5 text-slate-300">
+            <li>Reef Garden: calm lagoon, beginner friendly</li>
+            <li>Turtle Cove: frequent turtle sightings</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section id="dining" class="surface section reveal" style="padding:1.5rem;">
+      <h2>Dining</h2>
+      <p class="text-slate-300">Street food by the market, seaside restaurants on Harbor Road, and late-night spots near the marina.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Taniti Tourism Board • Prototype for coursework • No data stored</div>
+  </footer>
+
+  <!-- relative script path -->
+  <script src="site.js"></script>
+</body>
+</html>

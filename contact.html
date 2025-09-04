@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Visit Taniti — Contact</title>
+  <meta name="description" content="Contact the Taniti Tourism Board. Prototype only; responses are simulated."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="site.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>Visit Taniti</span></a>
+      <ul class="navlinks">
+        <li><a data-nav href="index.html" class="navlink">Home</a></li>
+        <li><a data-nav href="attractions.html" class="navlink">Attractions</a></li>
+        <li><a data-nav href="booking.html" class="navlink">Booking</a></li>
+        <li><a data-nav href="contact.html" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="kicker">Say hello</span>
+      <h1 class="mt-2">Contact the Taniti Tourism Board</h1>
+      <h2 class="text-white/90">We typically respond within 48 hours.</h2>
+    </div>
+  </section>
+
+  <main class="section container">
+    <div class="grid-3">
+      <form id="contactForm" class="form surface reveal" style="padding:1.2rem;" novalidate>
+        <div>
+          <label class="label" for="cname">Name</label>
+          <input id="cname" class="input" required>
+        </div>
+        <div>
+          <label class="label" for="cemail">Email</label>
+          <input id="cemail" type="email" class="input" required>
+        </div>
+        <div>
+          <label class="label" for="cmsg">Message</label>
+          <textarea id="cmsg" rows="5" class="textarea" required></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <p class="hint">Prototype only. No data submitted.</p>
+          <button class="btn">Send</button>
+        </div>
+      </form>
+
+      <figure class="card reveal">
+        <!-- corrected to point into your images folder -->
+        <img class="media-16x9" src="images/board-office.jpg" alt="Tourism board office exterior">
+        <figcaption class="card-body" style="color:var(--muted);font-size:.95rem;">Tourism Board Office</figcaption>
+      </figure>
+
+      <div class="surface reveal" style="padding:1.2rem;">
+        <h2>Office hours</h2>
+        <p>Mon–Fri 9:00–17:00. Closed on major holidays.</p>
+        <h2 style="margin-top:1rem;">Address</h2>
+        <p>Harbor Road, Taniti City</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Taniti Tourism Board • Prototype for coursework • No data stored</div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

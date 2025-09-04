@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Visit Taniti — Booking</title>
+  <meta name="description" content="Reserve your Taniti experiences. Prototype only; no data submitted."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- relative so it works when file is opened directly -->
+  <link rel="stylesheet" href="site.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>Visit Taniti</span></a>
+      <ul class="navlinks">
+        <li><a data-nav href="index.html" class="navlink">Home</a></li>
+        <li><a data-nav href="attractions.html" class="navlink">Attractions</a></li>
+        <li><a data-nav href="booking.html" class="navlink">Booking</a></li>
+        <li><a data-nav href="contact.html" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="kicker">Plan it</span>
+      <h1 class="mt-2">Book your experience</h1>
+      <h2 class="text-white/90">Prototype only. No real submissions.</h2>
+    </div>
+  </section>
+
+  <main class="section container">
+    <div class="grid-3">
+      <div class="surface reveal" style="padding:1.2rem;">
+        <form id="bookingForm" class="form" novalidate>
+          <label class="label" for="tour">Tour</label>
+          <select id="tour" class="select">
+            <option>City Market Walk</option>
+            <option>Museum of Taniti</option>
+            <option>Rainforest Hike</option>
+            <option>Snorkeling – Reef Garden</option>
+            <option>Snorkeling – Turtle Cove</option>
+          </select>
+
+          <div>
+            <label class="label" for="date">Date</label>
+            <input id="date" name="date" type="date" class="input" required>
+            <p class="hint">Choose a date at least 2 days from today.</p>
+          </div>
+
+          <div>
+            <label class="label" for="size">Group size</label>
+            <input id="size" type="number" min="1" max="12" value="2" class="input">
+          </div>
+
+          <div>
+            <label class="label" for="name">Full name</label>
+            <input id="name" name="name" class="input" autocomplete="name" required>
+          </div>
+
+          <div>
+            <label class="label" for="email">Email</label>
+            <input id="email" name="email" type="email" class="input" autocomplete="email" required>
+          </div>
+
+          <div>
+            <label class="label" for="notes">Notes</label>
+            <textarea id="notes" rows="3" class="textarea" placeholder="Accessibility needs, preferences, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Reserve spot</button>
+          <p class="hint">Submitting shows a confirmation alert. No data stored.</p>
+        </form>
+      </div>
+
+      <figure class="card reveal">
+        <!-- corrected path to images/harbor.jpg -->
+        <img class="media-16x9" src="images/harbor.jpg" alt="Harbor with boats at sunrise">
+        <figcaption class="card-body" style="color:var(--muted);font-size:.95rem;">Morning departures from the harbor</figcaption>
+      </figure>
+
+      <figure class="card reveal">
+        <!-- corrected path to images/bikes.jpg -->
+        <img class="media-16x9" src="images/bikes.jpg" alt="Row of rental bikes">
+        <figcaption class="card-body" style="color:var(--muted);font-size:.95rem;">Easy local transport</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Taniti Tourism Board • Prototype for coursework • No data stored</div>
+  </footer>
+
+  <!-- relative script -->
+  <script src="site.js"></script>
+</body>
+</html>
